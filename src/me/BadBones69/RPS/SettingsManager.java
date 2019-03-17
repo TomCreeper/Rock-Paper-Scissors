@@ -31,8 +31,8 @@ public class SettingsManager {
         public void setup(Plugin p) {
                 cfile = new File(p.getDataFolder(), "config.yml");
                 config = p.getConfig();
-                //config.options().copyDefaults(true);
-                //saveConfig();
+                config.options().copyDefaults(true);
+                saveConfig();
         }
        
        
